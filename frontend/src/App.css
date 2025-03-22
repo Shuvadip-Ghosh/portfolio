@@ -1,0 +1,404 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "IBM Plex Mono", monospace;
+}
+*::-webkit-scrollbar {
+    display: none;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+body {
+    background-color: #181a1b;
+    color: white;
+}
+.text-grey {
+    color: grey;
+}
+.hi {
+    color: #149414;
+    border-bottom: 1px solid #149414;
+}
+
+/* navbar */
+nav {
+    position: fixed;
+    top: 0;
+    height: 5rem;
+    width: 100vw;
+    z-index: 5;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #181a1b;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+nav ul li {
+    list-style: none;
+    margin: 0 1rem;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.85rem !important;
+}
+.active {
+    color: #149414 !important;
+}
+nav ul li a:hover {
+    font-size: 1.2rem !important;
+    color: #149414 !important;
+}
+.left {
+    font-size: 1.2rem;
+}
+.right ul li a svg {
+    margin-right: 0rem;
+    vertical-align: middle;
+}
+/* navbar */
+
+/* home */
+.home {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0rem 0;
+    height: 100vh;
+}
+.leftSection {
+    width: 25%;
+}
+.leftSection h1 {
+    font-size: 2rem;
+    font-family: "Poppins", sans-serif;
+}
+#element {
+    color: #149414;
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+}
+.rightSection {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+.svg-bg {
+    width: 90%;
+}
+.dev {
+    z-index: 1;
+    width: 30%;
+    position: absolute;
+    top: 10rem;
+}
+.prog-bgPY {
+    width: 24%;
+    position: absolute;
+    z-index: 2;
+    top: 36%;
+    left: 46%;
+}
+.prog-bgJS {
+    width: 22%;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 78%;
+}
+.prog-bgSHPY {
+    width: 18%;
+    position: absolute;
+    z-index: 1;
+    top: 30%;
+    left: 78%;
+}
+.PY {
+    width: 4%;
+    position: absolute;
+    z-index: 2;
+    top: 49%;
+    left: 56%;
+}
+.JS {
+    width: 3%;
+    position: absolute;
+    z-index: 2;
+    top: 62.5%;
+    left: 87.5%;
+}
+.SHPY {
+    width: 3%;
+    position: absolute;
+    z-index: 1;
+    top: 39.5%;
+    left: 85.5%;
+}
+/* home */
+/* services */
+.services {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    margin-top: 6rem;
+}
+.servicelist {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.servicecard {
+    background-color: #131413;
+    width: 100%;
+    margin: 1rem 0;
+    height: 5rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: width 0.5s, padding 0.5s;
+}
+.servactcard {
+    width: 110%;
+    padding: 1.5rem;
+    margin-bottom: 0.5rem;
+    box-shadow: 0px 0px 25px 3px #7d8487;
+}
+.servicehead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.servicecard > p {
+    color: #149414;
+    border-bottom: 1px solid #149414;
+    width: fit-content;
+    cursor: pointer;
+}
+.servicedet {
+    width: 33%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.servicedetcard {
+    background-color: #181a1b;
+    width: 0%;
+    max-height: 18.5rem;
+    overflow: hidden;
+    opacity: 0;
+    transition: width 1s ease-in-out, opacity 1s ease-in-out;
+    margin-left: 1rem;
+}
+.servactdet {
+    opacity: 1;
+    width: 100%;
+    overflow: visible;
+}
+.servicedetcard > h1 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+.servicedetcard > h3 {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-style: italic;
+    font-family: "Poppins", sans-serif;
+}
+.servicedetcard > p {
+    text-align: justify;
+    font-family: "Poppins", sans-serif;
+}
+/* services */
+
+/* about */
+.about {
+    max-height: 110vh;
+    width: 80%;
+    background-color: #131413;
+    margin: 6rem auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 2rem;
+    padding: 3rem;
+}
+.abt-left{
+    width: 30%;
+}
+.abt-right{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.abt-text>h1{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.abt-text >p{
+    text-align: justify;
+    font-family: "Poppins", sans-serif;
+}
+.techstacks{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.techstacks>h1{
+    width: 100%;
+    margin-top: 2rem;
+}
+.techcard{
+    width: 6rem;
+    height: 6rem;
+    background-color: #181a1b;
+    border-radius: 2rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+.techcard > svg{
+    width: 75%;
+    margin-bottom: 0.5rem;
+}
+.techcard> p {
+    font-family: "Poppins", sans-serif;
+}
+/* about */
+
+/* projects */
+.projects {
+    height: 100vh;
+}
+/* projects */
+
+/* contact */
+.contact {
+    height: 80vh;
+    width: 70%;
+    background-color: #131413;
+    margin: 6rem auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 2rem;
+}
+.left-contact {
+    width: 30%;
+}
+.left-contact > h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.contact-form {
+    width: 40%;
+    width: 45%;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+.ne {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.name,
+.email {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+.name > svg {
+    position: absolute;
+    top: 37.3%;
+    left: 51.5%;
+    left: 50%;
+}
+.email > svg {
+    position: absolute;
+    top: 37.3%;
+    left: 67.5%;
+}
+#message {
+    padding: 1rem;
+}
+input,
+textarea {
+    border: 3px solid white;
+    background-color: #131413;
+    height: 3rem;
+    border-radius: 0.8rem;
+    margin-top: 1rem;
+    color: white;
+    padding-left: 2.5rem;
+    padding-right: 1rem;
+    outline: none;
+}
+.snd-msg {
+    width: 40%;
+    height: 4rem;
+    margin-top: 2rem;
+    border: 3px solid white;
+    background-color: #131413;
+    color: white;
+    border-radius: 0.8rem;
+    font-size: 1.08rem;
+}
+.snd-msg:hover {
+    background-color: white;
+    color: black;
+}
+/* contact */
+
+/* footer */
+.footer {
+    width: 100%;
+    background-color: #131413;
+    padding: 4rem 0;
+    display: flex;
+    justify-content: space-around;
+}
+.footertxt {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footertxt > div > h1 {
+    margin-bottom: 2rem !important;
+}
+.footernav {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footernav > ul {
+    margin-bottom: 1rem;
+}
+.footernav > ul > li {
+    list-style: none;
+    margin: 1rem 0rem;
+}
+.footerbtmright ul {
+    display: flex;
+}
+.footerbtmright ul li {
+    list-style: none;
+    margin-right: 2rem;
+}
+/* footer */

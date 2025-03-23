@@ -22,6 +22,7 @@ body {
 .hi {
     color: #149414;
     border-bottom: 1px solid #149414;
+    cursor: pointer;
 }
 
 /* navbar */

@@ -12,12 +12,12 @@ export default function Home() {
             strings: [
                 "I am a passionate Web Developer",
                 "I am a passionate Python Enthusiast",
-                'I build in multiple languages so <a class="hi" href="/">let\'s chat.</a>',
+                'I build in multiple languages so <a class="hi" href="/contact">let\'s chat.</a>',
             ],
             typeSpeed: 50,
             backSpeed: 50,
-            loop: true,
-            loopCount: Infinity,
+            // loop: true,
+            // loopCount: Infinity,
             smartBackspace: true,
         });
 

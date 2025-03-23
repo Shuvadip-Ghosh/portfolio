@@ -9,9 +9,9 @@ export default function Footer() {
                     <h1>Let's make something amazing together.</h1>
                     <h2>
                         Start by{" "}
-                        <a href="/" className="hi">
+                        <NavLink to="/contact" className="hi">
                             saying hi
-                        </a>
+                        </NavLink>
                     </h2>
                 </div>
                 <div className="footerbtmleft">
@@ -39,8 +39,7 @@ export default function Footer() {
                 <div className="footerbtmright">
                     <ul>
                         <li className="socials">
-                            <a
-                                target="_blank"
+                            <a target="_blank" rel="noreferrer"
                                 href="https://github.com/Shuvadip-Ghosh"
                             >
                                 <svg
@@ -56,7 +55,7 @@ export default function Footer() {
                             </a>
                         </li>
                         <li className="socials">
-                            <a target="_blank" href="/">
+                            <a target="_blank" rel="noreferrer" href="/">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     width="16"
@@ -70,7 +69,7 @@ export default function Footer() {
                             </a>
                         </li>
                         <li className="socials">
-                            <a target="_blank" href="/">
+                            <a target="_blank" rel="noreferrer" href="/">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     width="16"

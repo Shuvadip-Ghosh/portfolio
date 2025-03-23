@@ -28,7 +28,7 @@ export default function Header() {
         <div className="right">
           <ul>
             <li className="socials">
-              <a target="_blank"  href="https://github.com/Shuvadip-Ghosh">
+              <a target="_blank" rel="noreferrer"  href="https://github.com/Shuvadip-Ghosh">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -42,7 +42,7 @@ export default function Header() {
               </a>
             </li>
             <li className="socials">
-              <a target="_blank"  href="/">
+              <a target="_blank" rel="noreferrer"  href="/">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -56,7 +56,7 @@ export default function Header() {
               </a>
             </li>
             <li className="socials">
-              <a target="_blank"  href="/">
+              <a target="_blank" rel="noreferrer" href="/">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"

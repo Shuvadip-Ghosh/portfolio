@@ -6,7 +6,7 @@ import Services from "./components/services.js";
 import Footer from "./components/footer.js";
 import Contact from "./components/contact.js";
 import About from "./components/about.js";
-import Project from "./components/project.js";
+import Builds from "./components/builds.js";
 function App() {
     return (
         <BrowserRouter>
@@ -15,9 +15,9 @@ function App() {
                 <Route path="/" element={<><Home /><Outlet/></>} >
                     <Route path="services" element={<Services />} />
                 </Route>
-                <Route path="/contact" element={<Contact />} />
                 <Route path="/about" element={<About />} />
-                <Route path="/projects" element={<Project />} />
+                <Route path="/builds" element={<Builds />} />
+                <Route path="/contact" element={<Contact />} />
             </Routes>
             <Footer />
         </BrowserRouter>

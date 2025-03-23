@@ -18,7 +18,7 @@ export default function Header() {
               <NavLink to="/about">AboutMe</NavLink>
             </li>
             <li>
-              <NavLink to="/projects">Projects</NavLink>
+              <NavLink to="/builds">Builds</NavLink>
             </li>
             <li>
               <NavLink to="/contact">Contact Me</NavLink>
@@ -42,7 +42,7 @@ export default function Header() {
               </a>
             </li>
             <li className="socials">
-              <a target="_blank" rel="noreferrer"  href="/">
+              <a target="_blank" rel="noreferrer"  href="https://www.linkedin.com/in/shuvadipghosh">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -56,7 +56,7 @@ export default function Header() {
               </a>
             </li>
             <li className="socials">
-              <a target="_blank" rel="noreferrer" href="/">
+              <a target="_blank" rel="noreferrer" href="mailto:shuvadipdeveloper@gmail.com">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"

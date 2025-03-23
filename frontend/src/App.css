@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+/* 232323 */
+/* 222526 */
+:root {
+    --primary-bg-color: #181a1b;
+    --secondary-bg-color: #131413;
+    --primary-color: #149414;
+    --secondary-color: white;
+  }
 * {
     margin: 0;
     padding: 0;
@@ -9,20 +17,28 @@
     display: none;
 }
 a {
-    color: white;
+    color: var(--secondary-color);
     text-decoration: none;
 }
 body {
-    background-color: #181a1b;
-    color: white;
-}
-.text-grey {
-    color: grey;
+    background-color: var(--primary-bg-color);
+    color: var(--secondary-color);
 }
 .hi {
-    color: #149414;
-    border-bottom: 1px solid #149414;
+    color: var(--primary-color);
+    border-bottom: 1px solid var(--primary-color);
     cursor: pointer;
+}
+.redirect {
+    color: var(--secondary-color);
+    border-bottom: 1px solid var(--secondary-color);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+}
+.hi >svg,.redirect >svg{
+    margin-left: 0.5rem;
 }
 
 /* navbar */
@@ -35,7 +51,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #181a1b;
+    background-color: var(--primary-bg-color);
 }
 nav ul {
     display: flex;
@@ -47,15 +63,15 @@ nav ul li {
 }
 nav ul li a {
     text-decoration: none;
-    color: white;
+    color: var(--secondary-color);
     font-size: 0.85rem !important;
 }
 .active {
-    color: #149414 !important;
+    color: var(--primary-color) !important;
 }
 nav ul li a:hover {
     font-size: 1.2rem !important;
-    color: #149414 !important;
+    color: var(--primary-color) !important;
 }
 .left {
     font-size: 1.2rem;
@@ -82,7 +98,7 @@ nav ul li a:hover {
     font-family: "Poppins", sans-serif;
 }
 #element {
-    color: #149414;
+    color: var(--primary-color);
     font-size: 1rem;
     font-family: "Poppins", sans-serif;
 }
@@ -159,7 +175,7 @@ nav ul li a:hover {
     align-items: center;
 }
 .servicecard {
-    background-color: #131413;
+    background-color: var(--secondary-bg-color);
     width: 100%;
     margin: 1rem 0;
     height: 5rem;
@@ -181,8 +197,8 @@ nav ul li a:hover {
     align-items: center;
 }
 .servicecard > p {
-    color: #149414;
-    border-bottom: 1px solid #149414;
+    color: var(--primary-color);
+    border-bottom: 1px solid var(--primary-color);
     width: fit-content;
     cursor: pointer;
 }
@@ -193,7 +209,7 @@ nav ul li a:hover {
     overflow: hidden;
 }
 .servicedetcard {
-    background-color: #181a1b;
+    background-color: var(--primary-bg-color);
     width: 0%;
     max-height: 18.5rem;
     overflow: hidden;
@@ -226,7 +242,7 @@ nav ul li a:hover {
 .about {
     max-height: 110vh;
     width: 80%;
-    background-color: #131413;
+    background-color: var(--secondary-bg-color);
     margin: 6rem auto;
     display: flex;
     justify-content: space-around;
@@ -264,7 +280,7 @@ nav ul li a:hover {
 .techcard{
     width: 6rem;
     height: 6rem;
-    background-color: #181a1b;
+    background-color: var(--primary-bg-color);
     border-radius: 2rem;
     padding: 1rem;
     display: flex;
@@ -281,17 +297,55 @@ nav ul li a:hover {
 }
 /* about */
 
-/* projects */
-.projects {
-    height: 100vh;
+/* builds */
+.builds {
+    /* height: 100vh; */
+    margin: 6rem auto;
+    width: 80%;
 }
-/* projects */
+.buildcardcont,.techtags{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.buildhead{
+    width: 100%!important;
+    margin-bottom: 2rem;
+}
+.buildcard{
+    width: 18rem;
+    overflow: hidden;
+    padding: 1rem;
+    border-radius: 0.8rem;
+    background-color: var(--secondary-bg-color);
+}
+.buildcard >img{
+    width: 18rem;
+    border-radius: 0.8rem;
+}
+.buildcard> p{
+    text-align: justify;
+    font-family: "Poppins",sans-serif;
+    font-size: 0.8rem;
+    opacity: 0.5;
+    padding-top: 0.7rem;
+}
+.techtag{
+    font-size: 0.7rem;
+    background-color: var(--primary-bg-color);
+    width: fit-content;
+    text-align: center;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border-radius: 0.5rem;
+}
+/* builds */
 
 /* contact */
 .contact {
     height: 80vh;
     width: 70%;
-    background-color: #131413;
+    background-color: var(--secondary-bg-color);
     margin: 6rem auto;
     display: flex;
     justify-content: space-around;
@@ -339,12 +393,12 @@ nav ul li a:hover {
 }
 input,
 textarea {
-    border: 3px solid white;
-    background-color: #131413;
+    border: 3px solid var(--secondary-color);
+    background-color: var(--secondary-bg-color);
     height: 3rem;
     border-radius: 0.8rem;
     margin-top: 1rem;
-    color: white;
+    color: var(--secondary-color);
     padding-left: 2.5rem;
     padding-right: 1rem;
     outline: none;
@@ -353,14 +407,14 @@ textarea {
     width: 40%;
     height: 4rem;
     margin-top: 2rem;
-    border: 3px solid white;
-    background-color: #131413;
-    color: white;
+    border: 3px solid var(--secondary-color);
+    background-color: var(--secondary-bg-color);
+    color: var(--secondary-color);
     border-radius: 0.8rem;
     font-size: 1.08rem;
 }
 .snd-msg:hover {
-    background-color: white;
+    background-color: var(--secondary-color);
     color: black;
 }
 /* contact */
@@ -368,7 +422,7 @@ textarea {
 /* footer */
 .footer {
     width: 100%;
-    background-color: #131413;
+    background-color: var(--secondary-bg-color);
     padding: 4rem 0;
     display: flex;
     justify-content: space-around;
@@ -383,7 +437,7 @@ textarea {
     margin-bottom: 2rem !important;
 }
 .footernav {
-    width: 25%;
+    width: 10%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

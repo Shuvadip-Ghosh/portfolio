@@ -107,56 +107,29 @@ nav ul li a:hover {
     display: flex;
     justify-content: center;
 }
-.svg-bg {
-    width: 90%;
-}
 .dev {
-    z-index: 1;
     width: 30%;
     position: absolute;
-    top: 10rem;
-}
-.prog-bgPY {
-    width: 24%;
-    position: absolute;
-    z-index: 2;
-    top: 36%;
-    left: 46%;
-}
-.prog-bgJS {
-    width: 22%;
-    position: absolute;
-    z-index: 2;
-    top: 50%;
-    left: 78%;
-}
-.prog-bgSHPY {
-    width: 18%;
-    position: absolute;
-    z-index: 1;
-    top: 30%;
-    left: 78%;
+    top: 10%;
+    left: 57.5%;
 }
 .PY {
-    width: 4%;
+    width: 6%;
     position: absolute;
-    z-index: 2;
-    top: 49%;
+    top: 52%;
     left: 56%;
 }
 .JS {
-    width: 3%;
+    width: 6%;
     position: absolute;
-    z-index: 2;
-    top: 62.5%;
-    left: 87.5%;
+    top: 56%;
+    left: 85%;
 }
-.SHPY {
-    width: 3%;
+.RE {
+    width: 5%;
     position: absolute;
-    z-index: 1;
-    top: 39.5%;
-    left: 85.5%;
+    top: 25%;
+    left: 84%;
 }
 /* home */
 /* services */

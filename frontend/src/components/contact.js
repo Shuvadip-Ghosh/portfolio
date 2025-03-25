@@ -12,7 +12,7 @@ export default function Contact() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post("http://127.0.0.1:5000/submit-form", formData);
+            const response = await axios.post("https://backend-shuvadip-ghosh.vercel.app/submit-form", formData);
             setResponseMessage(response.data.message);
             setFormData({ name: "", email: "", message: "" }); // Reset form after successful submission
         } catch (error) {

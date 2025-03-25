@@ -390,6 +390,13 @@ textarea {
     background-color: var(--secondary-color);
     color: black;
 }
+.response{
+    position: absolute;
+    width: 20%;
+    right: 17%;
+    top: 72%;
+    text-align: center;;
+}
 /* contact */
 
 /* footer */

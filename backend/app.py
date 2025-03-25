@@ -27,6 +27,10 @@ class ContactSubmission(db.Model):
 with app.app_context():
     db.create_all()
 
+@app.route('/')
+def hello():
+    return "fuck you"
+
 # Route to handle form submissions
 @app.route('/submit-form', methods=['POST'])
 def submit_form():

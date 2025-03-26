@@ -14,78 +14,160 @@
 	*::-webkit-scrollbar {
 		display: none;
 	}
+
 	/* header */
-	.fold{
+	.fold {
 		display: none;
 		width: 100%;
 		position: inherit;
 		top: 5rem;
 	}
-	nav ul{
+
+	nav ul {
 		flex-direction: column;
 		width: max-content;
 	}
+
 	nav ul li {
 		font-size: 1rem;
 		text-align: center;
 		margin-bottom: 0.5rem;
 	}
-	.mid,.right{
+
+	.mid,
+	.right {
 		margin-bottom: 1.5rem;
 		display: flex;
 		justify-content: center;
 	}
-	.mid > ul {
+
+	.mid>ul {
 		width: 100%;
 	}
-	.right >ul{
+
+	.right>ul {
 		flex-direction: row;
 	}
-	.resp{
+
+	.resp {
 		z-index: 6;
 		display: block;
 	}
+
 	/* header */
 
 	/* home */
-	.home{
+	.home {
 		flex-direction: column;
 		width: 100%;
 		margin-top: 7rem;
 		justify-content: center;
 		height: 80vh;
 	}
-	.leftSection{
+
+	.leftSection {
 		width: 90%;
 	}
-	#element{
+
+	#element {
 		font-size: 1rem;
 	}
-	.dev{
+
+	.dev {
 		width: 70%;
 		left: 10%;
 	}
-	.PY{
+
+	.PY {
 		width: 15%;
 		top: 35%;
 		left: 7%;
 	}
-	.JS{
+
+	.JS {
 		width: 15%;
 		top: 35%;
 		left: 70%;
 	}
-	.RE{
+
+	.RE {
 		width: 10%;
 		top: 18%;
 		left: 70%;
 	}
+
 	/* home */
 
+	/* services */
+	.services {
+		display: block;
+	}
+
+	.servicelist {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		margin-top: 6rem;
+	}
+
+	.servicecard {
+		width: 27%;
+		overflow: hidden;
+		padding: 0.5rem;
+		/* box-shadow: none; */
+	}
+
+	.servactcard {
+		width: 30%;
+		padding: 0.5rem;
+		margin-bottom: 1rem;
+	}
+
+	.servicehead {
+		font-size: 0.6rem;
+	}
+
+	.servicehead>p {
+		font-size: 0.4rem;
+	}
+
+	.servicedet {
+		width: 100%;
+		margin-top: 2rem;
+	}
+
+	.servicedetcard {
+		padding: 0 0.8rem;
+	}
+
+	/* services */
+
+	/* about */
+	.about{
+		display: block;
+		min-height: 150vh;
+		width: 70vw;
+		padding: 3rem;
+	}
+	.abt-left{
+		width: 100%;
+	}
+	.abt-right{
+		width: 100%;
+	}
+	.techcard{
+		position: sticky;
+		top: 6rem;
+	}
+	/* about */
+
 	/* builds */
-	.buildcard{
+	.buildcard {
 		margin-bottom: 2rem;
 	}
+
 	/* builds */
 
 	/* contact */
@@ -95,81 +177,101 @@
 		display: block;
 		padding: 2rem;
 	}
-	.left-contact{
+
+	.left-contact {
 		width: fit-content;
 	}
-	.contact-form{
+
+	.contact-form {
 		width: 100%;
 		margin-top: 1rem;
 	}
-	.name,.email{
+
+	.name,
+	.email {
 		width: 100%;
 		margin-top: 1rem;
 	}
-	.name > svg {
+
+	.name>svg {
 		position: relative;
 		top: 3.2rem;
 		left: 4%;
 	}
-	.email > svg {
+
+	.email>svg {
 		position: relative;
-		top:3.1rem;
+		top: 3.1rem;
 		left: 4%;
 	}
-	.ne{
+
+	.ne {
 		display: block;
 	}
-	.snd-msg{
+
+	.snd-msg {
 		width: 50%;
 	}
-	.formbtm{
+
+	.formbtm {
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
 	}
-	.response{
+
+	.response {
 		width: 50%;
 		text-align: center;
 	}
+
 	/* contact */
-	
+
 	/* footer */
-	.footer{
+	.footer {
 		width: 100%;
 	}
-	.footer-top{
+
+	.footer-top {
 		width: 100%;
 		display: block;
 	}
-	.footertxt{
+
+	.footertxt {
 		width: fit-content;
 		font-size: 0.8rem;
 		margin: 0 1rem;
 	}
-	.footernav{
+
+	.footernav {
 		width: fit-content;
 		margin: 2rem auto;
 	}
-	.footer-btm{
+
+	.footer-btm {
 		width: 100%;
 		display: flex;
 		flex-direction: column-reverse;
 		justify-content: center;
 	}
-	.footerbtmleft{
+
+	.footerbtmleft {
 		width: 60%;
 		text-align: center;
 		margin: 0 auto;
 		margin-top: 1rem;
 	}
-	.footerbtmright{
+
+	.footerbtmright {
 		width: 100%;
 	}
-	.footerbtmright > ul{
+
+	.footerbtmright>ul {
 		margin: auto;
 	}
+
 	.footerbtmright ul li {
 		margin: 0 2rem;
 	}
+
 	/* footer */
 }

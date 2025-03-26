@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
 /* 232323 */
 /* 222526 */
 :root {
@@ -7,28 +8,34 @@
     --secondary-bg-color: #131413;
     --primary-color: #149414;
     --secondary-color: white;
-  }
+}
+
 * {
     margin: 0;
     padding: 0;
     font-family: "IBM Plex Mono", monospace;
 }
+
 *::-webkit-scrollbar {
     display: none;
 }
+
 a {
     color: var(--secondary-color);
     text-decoration: none;
 }
+
 body {
     background-color: var(--primary-bg-color);
     color: var(--secondary-color);
 }
+
 .hi {
     color: var(--primary-color);
     border-bottom: 1px solid var(--primary-color);
     cursor: pointer;
 }
+
 .redirect {
     color: var(--secondary-color);
     border-bottom: 1px solid var(--secondary-color);
@@ -37,7 +44,9 @@ body {
     align-items: center;
     width: fit-content;
 }
-.hi >svg,.redirect >svg{
+
+.hi>svg,
+.redirect>svg {
     margin-left: 0.5rem;
 }
 
@@ -53,42 +62,52 @@ nav {
     align-items: center;
     background-color: var(--primary-bg-color);
 }
-.fold{
+
+.fold {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--primary-bg-color);
 }
-.resp{
+
+.resp {
     display: none;
 }
+
 nav ul {
     display: flex;
     justify-content: center;
 }
+
 nav ul li {
     list-style: none;
     margin: 0 1rem;
 }
+
 nav ul li a {
     text-decoration: none;
     color: var(--secondary-color);
     font-size: 0.85rem !important;
 }
+
 .active {
     color: var(--primary-color) !important;
 }
+
 nav ul li a:hover {
     font-size: 1.2rem !important;
     color: var(--primary-color) !important;
 }
+
 .left {
     font-size: 1.2rem;
 }
+
 .right ul li a svg {
     margin-right: 0rem;
     vertical-align: middle;
 }
+
 /* navbar */
 
 /* home */
@@ -99,47 +118,56 @@ nav ul li a:hover {
     margin: 0rem 0;
     height: 100vh;
 }
+
 .leftSection {
     width: 25%;
 }
+
 .leftSection h1 {
     font-size: 2rem;
     font-family: "Poppins", sans-serif;
 }
+
 #element {
     color: var(--primary-color);
     font-size: 1rem;
     font-family: "Poppins", sans-serif;
 }
+
 .rightSection {
     width: 30%;
     display: flex;
     justify-content: center;
 }
+
 .dev {
     width: 30%;
     position: absolute;
     top: 10%;
     left: 57.5%;
 }
+
 .PY {
     width: 6%;
     position: absolute;
     top: 52%;
     left: 56%;
 }
+
 .JS {
     width: 6%;
     position: absolute;
     top: 56%;
     left: 85%;
 }
+
 .RE {
     width: 5%;
     position: absolute;
     top: 25%;
     left: 84%;
 }
+
 /* home */
 /* services */
 .services {
@@ -150,12 +178,14 @@ nav ul li a:hover {
     overflow: hidden;
     margin-top: 6rem;
 }
+
 .servicelist {
     width: 25%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .servicecard {
     background-color: var(--secondary-bg-color);
     width: 100%;
@@ -167,57 +197,68 @@ nav ul li a:hover {
     justify-content: space-between;
     transition: width 0.5s, padding 0.5s;
 }
+
 .servactcard {
     width: 110%;
     padding: 1.5rem;
     margin-bottom: 0.5rem;
     box-shadow: 0px 0px 25px 3px #7d8487;
 }
+
 .servicehead {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.servicecard > p {
+
+.servicecard>p {
     color: var(--primary-color);
     border-bottom: 1px solid var(--primary-color);
     width: fit-content;
     cursor: pointer;
 }
+
 .servicedet {
     width: 33%;
     display: flex;
-    align-items: center;
-    overflow: hidden;
+    flex-direction: row;
+    overflow-x: auto;
+    scroll-behavior: smooth;
 }
+
 .servicedetcard {
     background-color: var(--primary-bg-color);
-    width: 0%;
+    min-width: 94%;
+    /* Each card takes full width of the container */
     max-height: 18.5rem;
     overflow: hidden;
     opacity: 0;
-    transition: width 1s ease-in-out, opacity 1s ease-in-out;
-    margin-left: 1rem;
+    transition: opacity 0.5s ease-in-out;
+    position: sticky;
+    left: 0.2rem;
 }
+
 .servactdet {
     opacity: 1;
-    width: 100%;
-    overflow: visible;
 }
-.servicedetcard > h1 {
+
+.servicedetcard>h1 {
     margin-bottom: 1rem;
     font-size: 2rem;
 }
-.servicedetcard > h3 {
+
+.servicedetcard>h3 {
     margin-bottom: 1rem;
     font-size: 1rem;
     font-style: italic;
     font-family: "Poppins", sans-serif;
 }
-.servicedetcard > p {
+
+.servicedetcard>p {
     text-align: justify;
     font-family: "Poppins", sans-serif;
 }
+
 /* services */
 
 /* about */
@@ -232,34 +273,41 @@ nav ul li a:hover {
     border-radius: 2rem;
     padding: 3rem;
 }
-.abt-left{
+
+.abt-left {
     width: 30%;
 }
-.abt-right{
+
+.abt-right {
     width: 45%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
-.abt-text>h1{
+
+.abt-text>h1 {
     font-size: 2rem;
     margin-bottom: 1rem;
 }
-.abt-text >p{
+
+.abt-text>p {
     text-align: justify;
     font-family: "Poppins", sans-serif;
 }
-.techstacks{
+
+.techstacks {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.techstacks>h1{
+
+.techstacks>h1 {
     width: 100%;
     margin-top: 2rem;
 }
-.techcard{
+
+.techcard {
     width: 6rem;
     height: 6rem;
     background-color: var(--primary-bg-color);
@@ -270,13 +318,16 @@ nav ul li a:hover {
     align-items: center;
     margin-top: 1rem;
 }
-.techcard > svg{
+
+.techcard>svg {
     width: 75%;
     margin-bottom: 0.5rem;
 }
-.techcard> p {
+
+.techcard>p {
     font-family: "Poppins", sans-serif;
 }
+
 /* about */
 
 /* builds */
@@ -285,34 +336,45 @@ nav ul li a:hover {
     margin-top: 6rem;
     width: 80%;
 }
-.buildcardcont,.techtags{
+
+.buildcardcont,
+.techtags {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.buildhead{
-    width: 100%!important;
+
+.buildhead {
+    width: 100% !important;
     margin-bottom: 2rem;
+    position: sticky;
+    top: 6rem;
 }
-.buildcard{
+
+.buildcard {
     width: 18rem;
     overflow: hidden;
     padding: 1rem;
     border-radius: 0.8rem;
     background-color: var(--secondary-bg-color);
+    position: sticky;
+    top: 10rem;
 }
-.buildcard >img{
+
+.buildcard>img {
     width: 18rem;
     border-radius: 0.8rem;
 }
-.buildcard> p{
+
+.buildcard>p {
     text-align: justify;
-    font-family: "Poppins",sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 0.8rem;
     opacity: 0.5;
     padding-top: 0.7rem;
 }
-.techtag{
+
+.techtag {
     font-size: 0.7rem;
     background-color: var(--primary-bg-color);
     width: fit-content;
@@ -321,6 +383,7 @@ nav ul li a:hover {
     margin: 0.5rem 0;
     border-radius: 0.5rem;
 }
+
 /* builds */
 
 /* contact */
@@ -334,44 +397,53 @@ nav ul li a:hover {
     align-items: center;
     border-radius: 2rem;
 }
+
 .left-contact {
     width: 30%;
 }
-.left-contact > h1 {
+
+.left-contact>h1 {
     font-size: 2rem;
     margin-bottom: 1rem;
 }
+
 .contact-form {
     width: 45%;
     border-radius: 2rem;
     display: flex;
     flex-direction: column;
 }
+
 .ne {
     display: flex;
     justify-content: space-between;
     margin-bottom: 2rem;
 }
+
 .name,
 .email {
     display: flex;
     flex-direction: column;
     width: 45%;
 }
-.name > svg {
+
+.name>svg {
     position: absolute;
     top: 37.3%;
     left: 51.5%;
     left: 50%;
 }
-.email > svg {
+
+.email>svg {
     position: absolute;
     top: 37.3%;
     left: 67.5%;
 }
+
 #message {
     padding: 1rem;
 }
+
 input,
 textarea {
     border: 3px solid var(--secondary-color);
@@ -384,12 +456,14 @@ textarea {
     padding-right: 1rem;
     outline: none;
 }
-.formbtm{
+
+.formbtm {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 2rem;
 }
+
 .snd-msg {
     width: 40%;
     height: 4rem;
@@ -399,53 +473,68 @@ textarea {
     border-radius: 0.8rem;
     font-size: 1.08rem;
 }
+
 .snd-msg:hover {
     background-color: var(--secondary-color);
     color: black;
 }
-.response{
+
+.response {
     width: 60%;
     text-align: center;
 }
+
 /* contact */
 
 /* footer */
-.footer{
+.footer {
     padding: 4rem 0;
     background-color: var(--secondary-bg-color);
     width: 100%;
 }
-.footer-top,.footer-btm {
+
+.footer-top,
+.footer-btm {
     display: flex;
     justify-content: space-around;
 }
-.footertxt,.footerbtmleft {
+
+.footertxt,
+.footerbtmleft {
     width: 30%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.footertxt > div > h1 {
+
+.footertxt>div>h1 {
     margin-bottom: 2rem !important;
 }
-.footernav,.footerbtmright {
+
+.footernav,
+.footerbtmright {
     width: 10%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.footernav > ul {
+
+.footernav>ul {
     margin-bottom: 1rem;
 }
-.footernav > ul > li {
+
+.footernav>ul>li {
     list-style: none;
     margin: 1rem 0rem;
 }
+
 .footerbtmright ul {
     display: flex;
 }
+
 .footerbtmright ul li {
     list-style: none;
     margin-right: 2rem;
 }
+
 /* footer */

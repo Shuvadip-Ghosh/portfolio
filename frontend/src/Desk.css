@@ -342,7 +342,6 @@ nav ul li a:hover {
     margin-bottom: 1rem;
 }
 .contact-form {
-    width: 40%;
     width: 45%;
     border-radius: 2rem;
     display: flex;
@@ -385,10 +384,15 @@ textarea {
     padding-right: 1rem;
     outline: none;
 }
+.formbtm{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
 .snd-msg {
     width: 40%;
     height: 4rem;
-    margin-top: 2rem;
     border: 3px solid var(--secondary-color);
     background-color: var(--secondary-bg-color);
     color: var(--secondary-color);
@@ -400,11 +404,8 @@ textarea {
     color: black;
 }
 .response{
-    position: absolute;
-    width: 20%;
-    right: 17%;
-    top: 72%;
-    text-align: center;;
+    width: 60%;
+    text-align: center;
 }
 /* contact */
 

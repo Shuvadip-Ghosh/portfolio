@@ -46,8 +46,10 @@ export default function Contact() {
                 </div>
                 <label htmlFor="message">Message</label>
                 <textarea id="message" placeholder="Please leave your message here....(500 characters)" value={formData.message} onChange={handleChange} required />
-                <button className="snd-msg" type="submit">Send Message</button>
-                <p className="response">{responseMessage}</p>
+                <div className="formbtm">
+                    <button className="snd-msg" type="submit">Send Message</button>
+                    <p className="response">{responseMessage}</p>
+                </div>
             </form>
         </section>
     );

@@ -43,7 +43,7 @@ def submit_form():
     db.session.add(new_entry)
     db.session.commit()
 
-    return jsonify({"message": "Message sent and saved to database!"})
+    return jsonify({"message": "Message sent!"})
 
 if __name__ == "__main__":
 	app.run(host="0.0.0.0", debug=False)

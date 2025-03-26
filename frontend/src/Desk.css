@@ -53,6 +53,15 @@ nav {
     align-items: center;
     background-color: var(--primary-bg-color);
 }
+.fold{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-bg-color);
+}
+.resp{
+    display: none;
+}
 nav ul {
     display: flex;
     justify-content: center;
@@ -400,14 +409,16 @@ textarea {
 /* contact */
 
 /* footer */
-.footer {
-    width: 100%;
-    background-color: var(--secondary-bg-color);
+.footer{
     padding: 4rem 0;
+    background-color: var(--secondary-bg-color);
+    width: 100%;
+}
+.footer-top,.footer-btm {
     display: flex;
     justify-content: space-around;
 }
-.footertxt {
+.footertxt,.footerbtmleft {
     width: 30%;
     display: flex;
     flex-direction: column;
@@ -416,7 +427,7 @@ textarea {
 .footertxt > div > h1 {
     margin-bottom: 2rem !important;
 }
-.footernav {
+.footernav,.footerbtmright {
     width: 10%;
     display: flex;
     flex-direction: column;

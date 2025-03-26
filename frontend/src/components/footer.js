@@ -4,51 +4,55 @@ import { NavLink } from "react-router";
 export default function Footer() {
     return (
         <section className="footer">
-            <div className="footertxt">
-                <div>
-                    <h1>Let's make something amazing together.</h1>
-                    <h2>
-                        Start by{" "}
-                        <NavLink to="/contact" className="hi">
-                            saying hi
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="16"
-                                height="16"
-                                fill="currentColor"
-                                class="bi bi-arrow-right"
-                                viewBox="0 0 16 16"
-                            >
-                                <path
-                                    fill-rule="evenodd"
-                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
-                                />
-                            </svg>
-                        </NavLink>
-                    </h2>
+            <div className="footer-top">
+                <div className="footertxt">
+                    <div>
+                        <h1>Let's make something amazing together.</h1>
+                        <h2>
+                            Start by{" "}
+                            <NavLink to="/contact" className="hi">
+                                saying hi
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="16"
+                                    height="16"
+                                    fill="currentColor"
+                                    class="bi bi-arrow-right"
+                                    viewBox="0 0 16 16"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                                    />
+                                </svg>
+                            </NavLink>
+                        </h2>
+                    </div>
                 </div>
+                <div className="footernav">
+                    <ul>
+                        <li>
+                            <NavLink to="/">Home</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="services">Services</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/about">AboutMe</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/builds">Builds</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/contact">Contact Me</NavLink>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div className="footer-btm">
                 <div className="footerbtmleft">
                     Shuvadip Ghosh © 2025 All Rights Reserved
                 </div>
-            </div>
-            <div className="footernav">
-                <ul>
-                    <li>
-                        <NavLink to="/">Home</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="services">Services</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/about">AboutMe</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/builds">Builds</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/contact">Contact Me</NavLink>
-                    </li>
-                </ul>
                 <div className="footerbtmright">
                     <ul>
                         <li className="socials">

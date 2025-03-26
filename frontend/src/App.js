@@ -1,4 +1,5 @@
-import "./App.css";
+import "./Desk.css";
+import "./Mob.css";
 import { BrowserRouter, Routes, Route, Outlet } from "react-router";
 import Header from "./components/header.js";
 import Home from "./components/home.js";

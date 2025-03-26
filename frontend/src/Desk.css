@@ -281,8 +281,8 @@ nav ul li a:hover {
 
 /* builds */
 .builds {
-    /* height: 100vh; */
-    margin: 6rem auto;
+    margin: 2rem auto;
+    margin-top: 6rem;
     width: 80%;
 }
 .buildcardcont,.techtags{

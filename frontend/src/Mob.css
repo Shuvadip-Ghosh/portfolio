@@ -82,6 +82,12 @@
 	}
 	/* home */
 
+	/* builds */
+	.buildcard{
+		margin-bottom: 2rem;
+	}
+	/* builds */
+
 	/* contact */
 	.contact {
 		width: 80%;

@@ -1,6 +1,9 @@
 import React,{ useState, useRef } from 'react';
 
 export default function Services() {
+  document.title = "Services - Shuvadip - Developer Portfolio ";
+  let metas = document.getElementsByTagName("meta");
+  metas.description.content = "Offering web development (React, Flask, Shopify), Python scripting, and Electron.js desktop app development. Let's build something amazing together!";
   const el = useRef(null);
   React.useEffect(() => {
     el.current.scrollIntoView({ behavior: 'smooth' })

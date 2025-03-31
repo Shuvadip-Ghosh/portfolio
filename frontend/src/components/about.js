@@ -1,6 +1,9 @@
 import React from "react";
 
 export default function About() {
+    document.title = "About - Shuvadip - Developer Portfolio ";
+    let metas = document.getElementsByTagName("meta");
+    metas.description.content = "Learn more about my journey as a developer, my skills in web, Python, and desktop development, and my passion for creating efficient, scalable applications.";
     return (
         <section className="about">
             <div className="abt-left"></div>

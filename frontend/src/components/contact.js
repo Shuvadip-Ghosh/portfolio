@@ -5,6 +5,10 @@ export default function Contact() {
     const [formData, setFormData] = useState({ name: "", email: "", message: "" });
     const [responseMessage, setResponseMessage] = useState("");
 
+    document.title = "Contact - Shuvadip - Developer Portfolio ";
+    let metas = document.getElementsByTagName("meta");
+    metas.description.content = "Get in touch for collaborations, freelance work, or inquiries about my development expertise. Let’s connect and create innovative solutions!";
+
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.id]: e.target.value });
     };

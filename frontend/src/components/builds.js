@@ -3,6 +3,9 @@ import PC from "../images/Personal_Cloud.jpg"
 import MP from "../images/Music_Player.jpg"
 
 export default function Builds() {
+	document.title = "Builds - Shuvadip - Developer Portfolio ";
+	let metas = document.getElementsByTagName("meta");
+	metas.description.content = "Browse my projects, hackathon contributions, and professional work, including web applications, Python scripts, and desktop tools built with cutting-edge technologies.";
   return (
 	<section className='builds'>
 		<div className="projects">

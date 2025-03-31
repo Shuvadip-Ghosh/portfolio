@@ -6,6 +6,9 @@ import re from "../images/react.png";
 import dev from "../images/dev.png";
 
 export default function Home() {
+    document.title = "Shuvadip - Developer Portfolio ";
+    let metas = document.getElementsByTagName("meta");
+    metas.description.content = "Explore my portfolio – a showcase of my web, Python, and desktop development projects. Passionate about coding, innovation, and building impactful solutions.";
     const el = React.useRef(null);
 
     React.useEffect(() => {

@@ -222,8 +222,6 @@ nav ul li a:hover {
     width: 33%;
     display: flex;
     flex-direction: row;
-    overflow-x: auto;
-    scroll-behavior: smooth;
 }
 
 .servicedetcard {
@@ -233,13 +231,19 @@ nav ul li a:hover {
     max-height: 18.5rem;
     overflow: hidden;
     opacity: 0;
-    transition: opacity 0.5s ease-in-out;
+    transform: translateX(0);
     position: sticky;
     left: 0.2rem;
 }
 
 .servactdet {
     opacity: 1;
+}
+#d-1.servactdet{
+    transform: translateX(-100%);
+}
+#d-2.servactdet{
+    transform: translateX(-200%);
 }
 
 .servicedetcard>h1 {
